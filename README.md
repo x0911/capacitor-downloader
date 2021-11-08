@@ -1,12 +1,20 @@
-# Capacitor Downloader
+# Capacitor v3 Downloader
 
 [![npm](https://img.shields.io/npm/v/capacitor-downloader.svg)](https://www.npmjs.com/package/capacitor-downloader)
 [![npm](https://img.shields.io/npm/dt/capacitor-downloader.svg?label=npm%20downloads)](https://www.npmjs.com/package/capacitor-downloader)
 [![Build Status](https://travis-ci.org/triniwiz/capacitor-downloader.svg?branch=master)](https://travis-ci.org/triniwiz/capacitor-downloader)
 
+Forked from [Capacitor Downloader](https://github.com/triniwiz/capacitor-downloader)
+
+## Why this package?
+
+This package was creating to handle Capacitor v3 updates, it's prefered to not use this package alone, but instead, use [capacitor-plugin-downloader](https://www.npmjs.com/package/capacitor-plugin-downloader)
+
+So, When you install this package, install `capacitor-plugin-downloader` too.
+
 ## Installation
 
-* `npm i https://github.com/x0911/capacitor-downloader.git`
+* `npm i https://github.com/x0911/capacitor-downloader.git capacitor-plugin-downloader`
 
 ### Android
 
