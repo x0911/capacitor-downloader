@@ -6,7 +6,7 @@
 
 ## Installation
 
-* `npm i capacitor-downloader`
+* `npm i https://github.com/x0911/capacitor-downloader.git`
 
 ### Android
 
