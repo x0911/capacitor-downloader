@@ -18,22 +18,21 @@ So, When you install this package, install `capacitor-plugin-downloader` too.
 
 **So, visit [capacitor-plugin-downloader](https://www.npmjs.com/package/capacitor-plugin-downloader) to use it, instead of below usage**
 
-```ts
-import { Downloader, DownloadEventData, ProgressEventData } from 'capacitor-downloader';
+```js
+import { Downloader } from 'capacitor-downloader';
 const downloader = new Downloader();
 const data = await downloader.createDownload({
-  url:
-    'https://wallpaperscraft.com/image/hulk_wolverine_x_men_marvel_comics_art_99032_3840x2400.jpg'
+  url: 'https://wallpaperscraft.com/image/hulk_wolverine_x_men_marvel_comics_art_99032_3840x2400.jpg'
 });
 const imageDownloaderId = data.value;
 downloader
-  .start({id:imageDownloaderId}, (progressData: ProgressEventData) => {
+  .start({ id: imageDownloaderId }, (progressData) => {
     console.log(`Progress : ${progressData.value}%`);
     console.log(`Current Size : ${progressData.currentSize}%`);
     console.log(`Total Size : ${progressData.totalSize}%`);
     console.log(`Download Speed in bytes : ${progressData.speed}%`);
   })
-  .then((completed: DownloadEventData) => {
+  .then((completed) => {
     console.log(`Image : ${completed.path}`);
   })
   .catch(error => {
