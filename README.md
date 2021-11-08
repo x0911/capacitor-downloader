@@ -16,29 +16,11 @@ So, When you install this package, install `capacitor-plugin-downloader` too.
 
 * `npm i https://github.com/x0911/capacitor-downloader.git capacitor-plugin-downloader`
 
-### Android
+## Usage 
 
-Add `import co.fitcom.capacitor.Downloader.DownloaderPlugin;` and `add(DownloaderPlugin.class);` in the app's `MainActivity.java` like this:
+**As said before, it't not prefered to use this package directly**
 
-```
-import co.fitcom.capacitor.Downloader.DownloaderPlugin;
-
-public class MainActivity extends BridgeActivity {
-  @Override
-  public void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-
-    // Initializes the Bridge
-    this.init(savedInstanceState, new ArrayList<Class<? extends Plugin>>() {{
-      // Additional plugins you've installed go here
-      // Ex: add(TotallyAwesomePlugin.class);
-      add(DownloaderPlugin.class);
-    }});
-  }
-}
-```
-
-## Usage
+**So, visit [capacitor-plugin-downloader](https://www.npmjs.com/package/capacitor-plugin-downloader) to use it, instead of below usage **
 
 ```ts
 import { Downloader, DownloadEventData, ProgressEventData } from 'capacitor-downloader';
@@ -74,13 +56,3 @@ downloader
 | cancel(options:Options)                       |         | `Promise<void>`                       | Cancels a download task.                              |
 | pause(options:Options)                        |         | `Promise<void>`                       | Pauses a download task.                               |
 | getPath(options:Options)                      |         | `Promise<void>`                       | Return the path of a download task.                   |
-
-## Example Image
-
-| IOS                                     | Android                                     |
-| --------------------------------------- | ------------------------------------------- |
-| Coming Soon | Coming Soon |
-
-# TODO
-
-* [ ] Local Notifications
