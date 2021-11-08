@@ -1,9 +1,5 @@
 # Capacitor v3 Downloader
 
-[![npm](https://img.shields.io/npm/v/capacitor-downloader.svg)](https://www.npmjs.com/package/capacitor-downloader)
-[![npm](https://img.shields.io/npm/dt/capacitor-downloader.svg?label=npm%20downloads)](https://www.npmjs.com/package/capacitor-downloader)
-[![Build Status](https://travis-ci.org/triniwiz/capacitor-downloader.svg?branch=master)](https://travis-ci.org/triniwiz/capacitor-downloader)
-
 Forked from [Capacitor Downloader](https://github.com/triniwiz/capacitor-downloader)
 
 ## Why this package?
