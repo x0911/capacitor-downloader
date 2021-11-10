@@ -14,10 +14,6 @@ So, When you install this package, install `capacitor-plugin-downloader` too.
 
 ## Usage 
 
-**As said before, it't not prefered to use this package directly**
-
-**So, visit [capacitor-plugin-downloader](https://www.npmjs.com/package/capacitor-plugin-downloader) to use it, instead of below usage**
-
 ```js
 import { Downloader } from 'capacitor-downloader';
 const downloader = new Downloader();
